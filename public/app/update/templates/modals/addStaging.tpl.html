@@ -1,0 +1,28 @@
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="vm.cancel()" data-dismiss="modal">&times;</button>
+                <h3>Add New Staging</h3>
+            </div>
+
+            <div class="modal-body">   
+                <form ng-submit="submit()">     
+                    <div class="form-group">
+                        <input type="text" class="form-control" ng-model="vm.staging.stageDate" placeholder="Stage Date" autofocus />
+                        <input type="text" class="form-control" ng-model="vm.staging.address" placeholder="Address"/>
+                        <input type="text" class="form-control" ng-model="vm.staging.city" placeholder="City" />
+                        <input type="text" class="form-control" ng-model="vm.staging.state" placeholder="State" />
+                        <input type="text" class="form-control" ng-model="vm.staging.zip" placeholder="ZIP code" />
+                        <input type="number" class="form-control" ng-model="vm.staging.listPrice" placeholder="List Price" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" ng-click="vm.submit()" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

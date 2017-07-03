@@ -1,0 +1,94 @@
+/*
+Color Palette:
+
+Gold: #E6D918
+Dark Gold: #B9AD1B
+Light Gold: #F1F0DE
+
+Maroon: #751F0E
+Dark Maroon: #521514
+
+*/
+
+/* Global Styles */
+body {
+    background-color: #751f0e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.removeIcon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Footer Styles */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #751F0E;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 0px -1px 3px black;
+}
+
+.footer a {
+    color: #E6D918;
+}
+
+.footer a:hover {
+    color: #F1F0DE;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #B9AD1B;
+    text-decoration: none;
+}
+
+/* Home Styles */
+#heroImage {
+    max-width: 100%;
+    margin-top: -1em;
+}
+
+/* Login */
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    animation: spin 2s linear infinite;
+    text-align: center;
+}   @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Nav Styles */
+#navbar {
+    background-color: #751F0E;
+    color: #E6D918;
+    border: none;
+    box-shadow: 0px 0px 6px #000;
+    height: 5em;
+}
+
+#navbar ul {
+    margin-top: .75em;
+}
+
+#navbar li a:hover{
+    background-color: white;
+    color: #521514;
+}
+
+#navbar a {
+    background-color: #751F0E;
+    color: #E6D918;
+}
+
+#navLogo {
+    max-height: 200%;
+}

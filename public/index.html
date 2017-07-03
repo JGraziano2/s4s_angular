@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <base href="/">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="content/css/style.css" rel="stylesheet">
+        <title>Staged4Sale</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+        <script src="https://use.fontawesome.com/7d6243fc6b.js"></script>
+    </head>
+    <body>
+        <div navigation></div>
+        
+        <div ui-view></div>
+        
+        <div footer></div>
+
+        <!-- Node Modules -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="node_modules/firebase/firebase.js"></script>
+        <script src="node_modules/angularfire/dist/angularfire.min.js"></script>
+        <script src="node_modules/angular-modal-service/src/angular-modal-service.js"></script>
+
+        <!-- App Scripts -->
+        <script src="app/app.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/app.routes.js"></script>
+        
+        <!-- Auth Scripts -->
+        <script src="app/auth/auth.routes.js"></script>
+        <script src="app/auth/services/auth.service.js"></script>
+        <script src="app/auth/controllers/login.ctrl.js"></script>
+        
+        <!-- Content Scripts -->
+        <script src="app/about/controllers/about.ctrl.js"></script>
+        <script src="app/contact/controllers/contact.ctrl.js"></script>
+        <script src="app/gallery/controllers/gallery.ctrl.js"></script>
+        <script src="app/home/controllers/home.ctrl.js"></script>
+        <script src="app/privacy/controllers/privacy.ctrl.js"></script>
+        <script src="app/update/controllers/update.ctrl.js"></script>
+        
+        <!-- Footer Scripts -->
+        <script src="app/utils/footer/footer.directive.js"></script>
+        
+        <!-- Modal Scripts -->
+        <script src="app/update/controllers/modals/addStaging.ctrl.js"></script>
+        
+        <!-- Navigation Scripts -->
+        <script src="app/utils/nav/nav.directive.js"></script>
+    </body>
+</html>
